@@ -1,0 +1,50 @@
+/* JSX示例的样式 */
+.jsx-example {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* 按钮样式示例 */
+.styled-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #0056b3;
+}
+
+/* 列表样式示例 */
+.list-container {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-container li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.list-container li:last-child {
+  border-bottom: none;
+}
+
+/* 条件渲染的消息样式 */
+.conditional-message {
+  color: #28a745;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin: 10px 0;
+}

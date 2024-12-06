@@ -1,0 +1,99 @@
+.event-handling {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.example-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.example-section h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+/* 鼠标事件区域 */
+.mouse-area {
+  height: 150px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: crosshair;
+}
+
+/* 表单样式 */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 事件冒泡示例 */
+.bubble-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.bubble-container button {
+  margin: 10px;
+  background-color: #28a745;
+}
+
+.bubble-container button:hover {
+  background-color: #218838;
+}
+
+/* 最佳实践列表 */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .event-handling {
+    padding: 10px;
+  }
+
+  .example-section {
+    padding: 15px;
+  }
+}

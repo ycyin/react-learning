@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.App-header p {
+  margin: 1rem 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.menu-section {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.menu-week {
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.menu-week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-week-header .arrow {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.menu-week.open .menu-week-header .arrow {
+  transform: rotate(180deg);
+}
+
+.submenu-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.menu-week.open .submenu-container {
+  max-height: 2000px; /* 设置一个足够大的值 */
+}
+
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.menu-week.open .submenu-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu-item .arrow {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.submenu-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+.content-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 20px;
+  /* 添加最大高度和滚动条 */
+  max-height: calc(100vh - 300px); /* 减去头部和菜单的高度 */
+  overflow-y: auto;
+  /* 美化滚动条 */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #90A4AE #CFD8DC; /* Firefox */
+}
+
+/* Webkit浏览器的滚动条样式 */
+.content-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content-section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.content-section::-webkit-scrollbar-thumb {
+  background: #90A4AE;
+  border-radius: 4px;
+}
+
+.content-section::-webkit-scrollbar-thumb:hover {
+  background: #78909C;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  
+  .menu-week-header {
+    padding: 1rem;
+  }
+  
+  .submenu-container {
+    padding: 1rem;
+  }
+  
+  .menu-week-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .submenu-item h3 {
+    font-size: 1rem;
+  }
+}
+
+/* 添加一些动画效果 */
+section {
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-2px);
+}
+
+/* 保留原来的动画效果 */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

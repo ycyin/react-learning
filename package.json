@@ -1,0 +1,42 @@
+{
+  "name": "react-learning",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cra-template-typescript": "1.1.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "4.0.3"
+  },
+  "scripts": {
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/node": "^14.18.0",
+    "@types/react": "^16.14.0",
+    "@types/react-dom": "^16.9.14",
+    "typescript": "^4.5.5"
+  }
+}

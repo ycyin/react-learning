@@ -1,0 +1,122 @@
+.rendering-logic {
+  padding: 20px;
+}
+
+.example-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* 认证部分样式 */
+.auth-section {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.auth-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-section button:hover {
+  background-color: #0056b3;
+}
+
+/* 切换内容部分样式 */
+.toggle-section {
+  margin: 20px 0;
+}
+
+.welcome-message {
+  color: #28a745;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* 选项卡样式 */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 8px 16px;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tabs button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* 待办事项列表样式 */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.todo-list li:hover {
+  background-color: #f8f9fa;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.todo-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* 空列表提示样式 */
+.empty-message {
+  text-align: center;
+  color: #6c757d;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* 最佳实践列表样式 */
+.best-practices {
+  padding-left: 20px;
+}
+
+.best-practices li {
+  margin-bottom: 10px;
+}
+
+.best-practices ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.best-practices ul li {
+  margin-bottom: 5px;
+  color: #666;
+}
